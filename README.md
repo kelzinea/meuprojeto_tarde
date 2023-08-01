@@ -46,5 +46,5 @@ pip install flask
 ## Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
+Escrito por Valtemir Procópio
 
