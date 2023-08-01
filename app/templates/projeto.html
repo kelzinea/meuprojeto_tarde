@@ -1,41 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
-</head>
-<body>
-    <header>
-        <h1>Meu Portfólio</h1>
-    </header>
-    <nav>
-        <a href="/">Início</a>
-        <a href="sobre">Sobre</a>
-        <a href="projetos">Projetos</a>
-        <a href="contato">Contato</a>
-    </nav>
-    <section id="projetos">
-        <h2>Meus Projetos</h2>
-        <div class="projeto">
-            <h3>Projeto 1</h3>
-            <p>Descrição do Projeto 1.</p>
-            <p>Tecnologias utilizadas: Tecnologia 1, Tecnologia 2, Tecnologia 3.</p>
-        </div>
-        <div class="projeto">
-            <h3>Projeto 2</h3>
-            <p>Descrição do Projeto 2.</p>
-            <p>Tecnologias utilizadas: Tecnologia A, Tecnologia B, Tecnologia C.</p>
-        </div>
-        <!-- Adicione mais projetos aqui, se desejar -->
-    </section>
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Se você tem interesse em entrar em contato comigo para discutir projetos ou oportunidades de trabalho, sinta-se à vontade para enviar um e-mail para <a href="mailto:meuemail@example.com">meuemail@example.com</a>.</p>
-    </section>
-    <footer>
-        <p>Todos os direitos reservados &copy; 2023 | [Seu Nome]</p>
-    </footer>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<section id="projetos">
+    <h2>Projetos</h2>
+    <p>Aqui você encontrará alguns dos projetos que desenvolvi.</p>
+  </section>
+  {% endblock %}
