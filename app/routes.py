@@ -1,5 +1,6 @@
 from app import app
 from flask import render_template
+from app.forms import Contato
 
 @app.route('/')
 def index():
@@ -16,3 +17,8 @@ def contato():
 @app.route('/projetos')
 def projeto():
     return render_template('projeto.html', title ='Projetos')
+
+@app.route('/enviar_contato')
+def enviar_contato():
+    formulario = Contato()
+    

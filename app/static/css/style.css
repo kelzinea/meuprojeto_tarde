@@ -1,42 +1,119 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f3f4; /* Cor rosa clara */
+  color: #333; /* Cor de texto escura */
+text-align: center;  
+font-size: 24px;
+}
 
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
+header {
+  background-color: #f06292; /* Cor rosa forte */
+  text-align: center;
+  padding: 20px 0;
+  color: #fff; /* Cor de texto branca */
+}
 
-  nav {
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    padding: 5px;
-  }
+header h1 {
+  margin: 0;
+}
 
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-  }
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
 
-  nav a:hover {
-    background-color: #555;
-  }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
 
-  section {
-    padding: 20px;
-  }
+main {
+  padding: 20px;
+}
 
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
+/* Restante do código anterior */
+
+.about, .projects {
+  margin-bottom: 30px;
+  text-align: center; /* Centraliza o texto do conteúdo */
+}
+
+.about p, .projects p {
+  margin: 0; /* Remove a margem padrão dos parágrafos */
+}
+
+
+.about h2,.projects h2 {
+  color: #f06292; /* Cor rosa forte */
+  border-bottom: 2px solid #f06292; /* Linha rosa forte na parte inferior dos títulos */
+  padding-bottom: 5px;
+  text-align: center; /* Centraliza o texto */
+  font-size: 24px; /* Aumenta o tamanho da fonte para 24 pixels */
+}
+
+
+.projects li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.projects li h3 {
+  color: #f06292; /* Cor rosa forte */
+}
+
+footer {
+  background-color: #b39ddb; /* Cor roxa */
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer p {
+  color: #fff; /* Cor de texto branca */
+  margin: 0;
+}
+
+/* Estilização geral do formulário */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilização dos campos de entrada de texto */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilização do botão de envio */
+input[type="submit"] {
+  background-color: #f06292; /* Cor rosa forte */
+  color: #fff; /* Cor de texto branca */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff69b4; /* Cor rosa mais clara no hover */
+}
