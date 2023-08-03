@@ -23,5 +23,27 @@
       <input type="submit" value="Enviar">
   </form>
   </section>
-{% endblock %}
+=======
+<section>
+  <h2>Entre em contato</h2>
+  <form action="" method="post">
+    <label for="nome">Nome:</label>
+    {{formulario.nome}}
+    
 
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    {{formulario.email}}
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required><br>
+    {{formulario.telefone}}
+
+    <label for="conteudo">Conteúdo:</label>
+    <textarea id="conteudo" name="conteudo" rows="4" cols="50" required></textarea><br>
+    {{formulario.conteudo}}
+
+    {{formulario.enviar}}
+  </form>
+</section>
+{% endblock %}
