@@ -48,3 +48,11 @@ pip install flask
 [MIT](https://choosealicense.com/licenses/mit/)
 Escrito por Valtemir Procópio
 
+Quinto passo: Para instalar as dependencias desse projeto, use o comando abaixo:
+```bash
+pip install -r requirements.txt
+```
+Sexto passo: Se você aprimorou o projeto, contribua adicionando as dependencias que utilizou com o comando abaixo:
+```bash
+pip freeze > requirements.txt
+```

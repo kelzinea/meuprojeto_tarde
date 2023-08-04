@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField,EmailField,TelField,TextAreaField,SubmitField
+from wtforms import StringField,EmailField,TelField, TextAreaField, SubmitField
 from wtforms.validators import DataRequired
 from flask_wtf.csrf import CSRFProtect
 
@@ -9,4 +9,3 @@ class Contato(FlaskForm):
     telefone = TelField('telefone', validators=[DataRequired()])
     conteudo = TextAreaField('conteudo')
     enviar = SubmitField('enviar')
-
